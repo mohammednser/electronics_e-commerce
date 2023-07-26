@@ -1,0 +1,35 @@
+name: electronics_e_commerce
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.5 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_nav_bar: ^5.0.6
+  flutter_svg: ^2.0.5
+  carousel_slider: ^4.2.1
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  google_fonts: ^4.0.4
+  get: ^4.6.5
+  line_icons: ^2.0.3
+
+flutter:
+
+  assets:
+   - assets/images/
+
+
+  uses-material-design: true
+fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+
