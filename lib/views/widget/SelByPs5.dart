@@ -41,11 +41,7 @@ class _SelByPs5State extends State<SelByPs5> {
         actions: [
           GestureDetector(
             child: Center(
-              child: Image.asset(
-                "assets/heart.png",
-                height: 20,
-                width: 50,
-              ),
+              child:  IconButton(icon:Icon (Icons.favorite_border_outlined,color: Colors.white,), onPressed: () {  },)
             ),
             onTap: () {},
           ),
@@ -229,14 +225,14 @@ class _SelByPs5State extends State<SelByPs5> {
               Column(
                 children: [
                   Image.asset(
-                    "assets/PS5HEADSETW.png",
+                    "assets/images/PS5HEADSETW.png",
                   ),
                 ],
               ),
               Column(
                 children: [
                   Image.asset(
-                    "assets/had.png",
+                    "assets/images/had.png",
                   ),
                 ],
               )

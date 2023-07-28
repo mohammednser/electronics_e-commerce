@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:electronics_e_commerce/screens/screens.dart';
 import 'package:electronics_e_commerce/views/store_page.dart';
 import 'package:electronics_e_commerce/views/widget/Item.dart';
 import 'package:electronics_e_commerce/views/widget/custom_appbar.dart';
@@ -9,7 +10,6 @@ import 'widget/custom_appbar.dart';
 import 'widget/custom_navbar.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'widget/custum_tapbar.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -23,6 +23,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+           backgroundColor: Color.fromARGB(255, 29, 31, 36),
+          //  backgroundColor: const Color(0xFF333742),
       appBar: AppBar(
         backgroundColor:Colors.transparent,
         
@@ -79,52 +81,81 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         const SizedBox(height: 30),
-        /*
+        
         Container(
       
           height: 20,
           child: ListView(
             shrinkWrap: true,
             scrollDirection: Axis.horizontal,
-            padding: const EdgeInsets.symmetric(horizontal: 18),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             children:  [
-              TextButton(
+
+
+               GestureDetector(
                 
-                     onPressed: () { 
-                       Navigator.of(context)
+                child: Text("ALL",style: TextStyle(
+                    fontSize: 16, fontFamily: 'Poppins',fontWeight: FontWeight.w800, color: Colors.white),),
+                onTap: () {
+                  Navigator.of(context)
                             .push(MaterialPageRoute(builder: (context) {
-                          return const HomePage();
+                          return const Screens();
                           }));
-                      },
-                      child: Text(
-                        "All",
-                        style: GoogleFonts.getFont("Poppins",
-                            fontSize: 15,
-                            // fontWeight: FontWeight.bold,
-                            color: Colors.grey),
-                      ),
-              ),
+              },),  
+              // TextButton(
+                
+              //        onPressed: () { 
+              //          Navigator.of(context)
+              //               .push(MaterialPageRoute(builder: (context) {
+              //             return const HomePage();
+              //             }));
+              //         },
+              //         child: Text(
+              //           "All",
+              //           style: GoogleFonts.getFont("Poppins",
+              //               fontSize: 15,
+              //               // fontWeight: FontWeight.bold,
+              //               color: Colors.grey),
+              //         ),
+              // ),
               Padding(
                 padding: EdgeInsetsDirectional.only(start: 30),
               ),
              
-             TextButton(onPressed: () {
-               Navigator.of(context)
+            //  TextButton(onPressed: () {
+            //    Navigator.of(context)
+            //                 .push(MaterialPageRoute(builder: (context) {
+            //               return const StorePage();
+            //               }));
+            //  }, child: 
+            //     Text(
+                
+            //     "Ps5",
+            //     style: TextStyle(
+            //         fontSize: 14, fontFamily: 'Poppins', color: Colors.white),
+            //   ),
+            //  ),
+             
+              SizedBox(
+                width: 25,
+              ),
+              
+              GestureDetector(
+                
+                child: Text("PS5",style: TextStyle(
+                    fontSize: 14, fontFamily: 'Poppins', color: Colors.white),),
+                onTap: () {
+                  Navigator.of(context)
                             .push(MaterialPageRoute(builder: (context) {
                           return const StorePage();
                           }));
-             }, child: 
-              Text(
-                "Ps5",
-                style: TextStyle(
-                    fontSize: 14, fontFamily: 'Poppins', color: Colors.white),
-              ),
-             ),
-             
-              SizedBox(
+              },),
+ SizedBox(
                 width: 30,
               ),
+              
               Text(
+                
                 "Ps4",
                 style: TextStyle(
                     fontSize: 14, fontFamily: 'Poppins', color: Colors.white),
@@ -156,9 +187,9 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
-     */
+     
     ///////////
-      TapbarCustom(),
+    
     /////////
        SizedBox(height: 30,),
        Row(

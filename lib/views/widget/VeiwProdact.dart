@@ -41,11 +41,7 @@ class _VeiwProdactState extends State<VeiwProdact> {
         actions: [
           GestureDetector(
             child: Center(
-              child: Image.asset(
-                "assets/share.png",
-                height: 20,
-                width: 50,
-              ),
+              child:IconButton(icon: Icon(Icons.share_outlined), onPressed: () {  },),
             ),
             onTap: () {},
           ),
@@ -226,14 +222,14 @@ class _VeiwProdactState extends State<VeiwProdact> {
                           Column(
                             children: [
                               Image.asset(
-                                "assets/PS5HEADSETW.png",
+                                "assets/images/PS5HEADSETW.png",
                               ),
                             ],
                           ),
                           Column(
                             children: [
                               Image.asset(
-                                "assets/had.png",
+                                "assets/images/had.png",
                               ),
                             ],
                           )
@@ -453,7 +449,7 @@ class _VeiwProdactState extends State<VeiwProdact> {
                       ),
                       child: InkWell(
                         onTap: () {},
-                        child: Center(child: Image.asset("assets/heart.png")),
+                        child: Center(child: IconButton(icon:Icon (Icons.favorite_border_outlined,color: Colors.white,), onPressed: () {  },)),
                       )),
                   Container(
                       margin: const EdgeInsets.only(left: 17),
@@ -473,7 +469,10 @@ class _VeiwProdactState extends State<VeiwProdact> {
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Image.asset("assets/shopping-cart.png"),
+                              Image.asset('assets/images/card.png')
+                              ,
+                                SizedBox(width: 18,)
+                              ,
                               Text(
                                 "  ADD TO CART",
                                 style: GoogleFonts.getFont(

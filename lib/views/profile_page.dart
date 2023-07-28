@@ -18,7 +18,7 @@ class _ProfilePagState extends State<ProfilePag> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       
+       backgroundColor: Color.fromARGB(255, 29, 31, 36),
         body: Center(
             child: Text("Profile",
                 style: GoogleFonts.getFont("Poppins",

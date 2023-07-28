@@ -25,7 +25,7 @@ class  Electronics_eCommerce extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-            scaffoldBackgroundColor:  const Color.fromARGB(125, 16, 17, 20),
+            scaffoldBackgroundColor: const Color(0xFF333742),
        fontFamily:'Poppins'
          ),
       home: const Screens(), 

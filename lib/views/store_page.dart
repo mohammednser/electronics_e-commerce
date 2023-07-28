@@ -1,4 +1,5 @@
 
+import 'package:electronics_e_commerce/screens/screens.dart';
 import 'package:electronics_e_commerce/views/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -11,10 +12,10 @@ class StorePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF333742),
+      backgroundColor: Color.fromARGB(255, 29, 31, 36),
       drawer: const Drawer(),
       appBar: AppBar(
-        backgroundColor: const Color(0xFF333742),
+        backgroundColor: const Color.fromARGB(255, 29, 31, 36),
         elevation: 0,
         title:  Row(mainAxisAlignment: MainAxisAlignment.end, children: [
           Stack(
@@ -71,7 +72,7 @@ class StorePage extends StatelessWidget {
                       onPressed: () {
                         Navigator.of(context)
                             .push(MaterialPageRoute(builder: (context) {
-                          return const HomePage();
+                          return const Screens();
                         }));
                       },
                       child: Text(

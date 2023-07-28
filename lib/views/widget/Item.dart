@@ -12,7 +12,8 @@ class _itemState extends State<item> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width / 1.3,
+      width: MediaQuery.of(context).size.width / 1.35,
+      height: MediaQuery.of(context).size.height /1.7,
       padding: const EdgeInsets.only(left:12,bottom: 16,top: 0),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(25),
@@ -32,10 +33,12 @@ class _itemState extends State<item> {
                       color: Colors.white),
                 ),
                 IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                       
+                    },
                     icon: const Icon(
-                      Icons.favorite,
-                      color: Colors.red,
+                      Icons.favorite_border_outlined,color: Colors.white,
+                      
                     ))
               ],
             ),
@@ -59,32 +62,26 @@ class _itemState extends State<item> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
+                    
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: const Color(0xFF333742)),
-                        width: MediaQuery.of(context).size.width / 10,
-                        height: MediaQuery.of(context).size.height / 18,
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(elevation: 0),
-                          child: const Text(""),
-                          onPressed: () {},
-                        ),
+                            borderRadius: BorderRadius.circular(5),
+                            color:  Color(0xFF333742)),
+                        width: 20,
+                        height: 20,
+                       
+                       
+                          
                       ),
                       const SizedBox(
                         height: 10,
                       ),
                       Container(
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: const Color(0xFF333742)),
-                        width: MediaQuery.of(context).size.width / 10,
-                        height: MediaQuery.of(context).size.height / 18,
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                              primary: const Color(0xFF333742), elevation: 0),
-                          child: const Text(""),
-                          onPressed: () {},
-                        ),
+                            borderRadius: BorderRadius.circular(5),
+                            color: const Color.fromARGB(255, 219, 222, 231)),
+                        width:  20,
+                        height:  20,
+                       
                       )
                     ],
                   ),

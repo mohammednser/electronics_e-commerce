@@ -17,7 +17,7 @@ class _ScreensState extends State<Screens> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
      HomePage(),
-    StorePage(),
+     ProfilePag(),
      ProfilePag(),
   ];
 
@@ -26,17 +26,21 @@ class _ScreensState extends State<Screens> {
     return Scaffold(
       
     
-      backgroundColor: Color(0xff333742),
+      backgroundColor: Color.fromARGB(255, 29, 31, 36),
+     
        body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: Container(
+        // borderRadius: BorderRadiusDirectional.vertical(top: Radius.circular(25)),
         decoration: BoxDecoration(
-          color: Color(0x454D5A),
+         // color: Color.fromARGB(125, 16, 17, 20),
+         color: const Color(0xFF333742),
+          borderRadius: BorderRadiusDirectional.vertical(top: Radius.circular(25)),
           boxShadow: [
             BoxShadow(
               blurRadius: 20,
-              color: Colors.black.withOpacity(.1),
+              color: Colors.black.withOpacity(.0),
             )
           ],
         ),
@@ -51,7 +55,8 @@ class _ScreensState extends State<Screens> {
               iconSize: 24,
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               duration: Duration(milliseconds: 400),
-              tabBackgroundColor: Color.fromARGB(125, 16, 17, 20),
+              tabBackgroundColor: Color.fromARGB(255, 29, 31, 36),
+             //  tabBackgroundColor: Color.fromARGB(0, 51, 55, 66),
               color: Colors.white, 
               tabs: const [
                 GButton(
